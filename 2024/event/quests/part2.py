@@ -1,4 +1,4 @@
-def potion_check(enemy):
+def potion_check(enemy: str) -> int:
     match enemy:
             case "A":
                 return 0
@@ -9,6 +9,8 @@ def potion_check(enemy):
             case "D":
                 return 5
             case "x":
+                return 0
+            case _:
                 return 0
 
 with open("data/part2.txt", "r") as f:
